@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Additional Files/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="Additional Files/bootstrap-5.1.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Additional Files/OwlCarousel2-2.3.4/css/owl.carousel.css">
+    <link rel="stylesheet" href="Additional Files/OwlCarousel2-2.3.4/css/owl.theme.default.css">
+    <script src="Additional Files/bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="Additional Files/Jquery/jquery-3.6.0.min.js"></script>
+    <script src="Additional Files/OwlCarousel2-2.3.4/js/jquery.min.js"></script>
+    <script src="Additional Files/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid border-bottom">
+            <div class="container upper-header">
+                <div class="row justify-content-between">
+                    <div class="col-5 ship my-auto"><p>Free International Shipping. No Minimum Purchase Required*</p></div>
+                    <div class="col-5 ">
+                        <ul class="upper-header-navigation nav text-center justify-content-end">
+                            <li class="upper-header-item nav-item" id="account-upper-header">My Account <i class="fas fa-chevron-down"></i>
+                                <div class="select-option ">
+                                    <p id="sign">Sign In</p>
+                                    <p id="register">Register</p>
+                                </div>
+                            </li>
+                            <li class="upper-header-item nav-item">Wish Lists</li>
+                            <li class="upper-header-item nav-item">Check Out</li>
+                            <li class="upper-header-item nav-item">Gift Certificates</li>
+                            <li class="upper-header-item nav-item dropdown">
+
+                                <span class="dropdown-toggle" data-bs-toggle="dropdown" id="selected-currency"><img
+                                        src="razor_images/us.gif" alt=""> USD</span>
+                                <ul class="dropdown-menu" style="padding-left: 10px!important;">
+                                    <li><span><img src="razor_images/us.gif" alt="" id="currency-select"> USD</span>
+                                    </li>
+                                    <li><span><img src="razor_images/au.gif" alt="" id="currency-select"> Australian
+                                            Dollar</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!--  upper header ends here -->            
+        </div> <!-- container-fluid for header ends here -->
+        <div class="container-fluid border-bottom">
+            <div class="container main-header">
+                <div class="row align-center">
+                    <div class="col-2 logo"><img src="razor_images/logo_1553585953__67107.original.png" alt=""></div>
+                    <div class="col-6 search-bar"><input type="text" id="search-bar" placeholder="Search the store"><button class="btn" id="search-button">SEARCH</button></div>
+                    <div class="col-2"><div class="account align-center"><i class="fas fa-user"></i><div class="text"><p>Hello, Sign In</p><p class="lower-text">My Account</p></div></div></div>
+                    <div class="col-2"><div class="account align-center"><i class="fas fa-shopping-cart"></i><div class="text"><p>My Cart</p><p class="lower-text"><span class="total-items">0</span> Items - $ <span class="total-amount">0.00</span></p> </div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border-bottom">
+            <div class="container lower-header">
+                <div class="row text-center">
+                    <div class="col-3"><button class="btn lower-header-button">ALL CATEGORIES<i class="fas fa-bars"></i></button></div>
+                    <div class="col-9">
+                        <ul class="nav lower-header-navigation align-content-center">
+                            <li class="nav-item lower-navigation-item"><a href="index.html">HOME</a></li>
+                            <li class="nav-item lower-navigation-item"><a href="about-us.html">ABOUT US</a></li>
+                            <li class="nav-item lower-navigation-item"><a href="products.html">PRODUCTS</a></li>
+                            <li class="nav-item lower-navigation-item"><a href="contact.html">CONTACT US</a></li>
+                            <li class="nav-item lower-navigation-item"><a href="blog.html">BLOG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="owl-carousel first-slider owl-theme">
+                    <div class="item slider-box">
+                        <img src="razor_images/slider_1.jpg" alt="">
+                        <div class="slider-overlay">
+                            <p class="heading">Smart Electric New Cooker</p>
+                            <p class="text">This is an all-in-one electric cooker that uses an induction system.</p> 
+                            <button class="btn slider-button">Get It Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="item slider-box">
+                        <img src="razor_images/slider_2.jpg" alt="">
+                        <div class="slider-overlay">
+                            <p class="heading">Featured Products Coffee Machine</p>
+                            <p class="text">This is an all-in-one electric cooker that uses an induction system.</p>
+                            <button class="btn slider-button">Get It Now</button>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="container services">
+                <div class="row">
+                    <div class="col">
+                        <div class="services-box">
+                            <div class="icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="icon-text">
+                                <p><b>Free Shipping</b></p>
+                                <p>Free Shipping On All Orders</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="services-box">
+                            <div class="icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="icon-text">
+                                <p><b>MOney Back Guarantee</b></p>
+                                <p>30 Days money back Guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="services-box">
+                            <div class="icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="icon-text">
+                                <p><b>Online Support 24/7</b></p>
+                                <p>Technical Support 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="services-box">
+                            <div class="icon">
+                                <i class="far fa-thumbs-up"></i>
+                            </div>
+                            <div class="icon-text">
+                                <p><b>Member Discount</b></p>
+                                <p>Upto 40% discount on All Products</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="services-box">
+                            <div class="icon">
+                                <i class="fas fa-id-card-alt"></i>
+                            </div>
+                            <div class="icon-text">
+                                <p><b>Secure Payments</b></p>
+                                <p>All Cards Accepted</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conatainer-fluid">
+            <div class="container shop-categories">
+                <div class="row">
+                    <p class="heading"><b>Shop By Categories</b></p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="razor_images/collection_1__72161.original.jpg" alt="">
+                        <ul class="collection-list">
+                            <li class="collection-heading">Audio Music</li>
+                            <li class="collection-item">Accessories</li>
+                            <li class="collection-item">Electronic and Digital</li>
+                            <li class="collection-item">Fashion and Clothings</li>
+                            <li class="collection-item">Jwellery and Watches</li>
+                            <li class="collection-item">Toys and Hobbies</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="razor_images/collection_2__31923.original.jpg" alt="">
+                        <ul class="collection-list">
+                            <li class="collection-heading">Phones and Tablets</li>
+                            <li class="collection-item">Accessories</li>
+                            <li class="collection-item">Electronic and Digital</li>
+                            <li class="collection-item">Jwellery and Watches</li>
+                            <li class="collection-item">Phones and Tablets</li>
+                            <li class="collection-item">Women</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="razor_images/collection_3__37436.original.jpg" alt="">
+                        <ul class="collection-list">
+                            <li class="collection-heading">Faxhion and Clothing</li>
+                            <li class="collection-item">Accessories</li>
+                            <li class="collection-item">Book and Offer</li>
+                            <li class="collection-item">Home and Kitchen</li>
+                            <li class="collection-item">Lightnings and Lamps</li>
+                            <li class="collection-item">School Uniforms</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="razor_images/collection_4__54083.original.jpg" alt="">
+                        <ul class="collection-list">
+                            <li class="collection-heading">Garden and Kitchen</li>
+                            <li class="collection-item">Bedding and Bath</li>
+                            <li class="collection-item">Bidebdumentos</li>
+                            <li class="collection-item">Living Room</li>
+                            <li class="collection-item">Loremous</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="razor_images/collection_5__89880.original.jpg" alt="">
+                        <ul class="collection-list">
+                            <li class="collection-heading">TV and Video</li>
+                            <li class="collection-item">Angene Mafin</li>
+                            <li class="collection-item">Bath and Bodycare</li>
+                            <li class="collection-item">Girls New</li>
+                            <li class="collection-item">Web cameras</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="razor_images/collection_6__48088.original.jpg" alt="">
+                        <ul class="collection-list">
+                            <li class="collection-heading">Beauty and Health</li>
+                            <li class="collection-item">Electronic and Digital</li>
+                            <li class="collection-item">Camodian</li>
+                            <li class="collection-item">Montemus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container sponser">
+                <div class="owl-carousel sponser-slider owl-theme">
+                    <div class="item"><img src="razor_images/brand-1.jpg" alt=""></div>
+                    <div class="item"><img src="razor_images/brand-2.jpg" alt=""></div>
+                    <div class="item"><img src="razor_images/brand-3.jpg" alt=""></div>
+                    <div class="item"><img src="razor_images/brand-4.jpg" alt=""></div>
+                    <div class="item"><img src="razor_images/brand-5.jpg" alt=""></div>
+                    <div class="item"><img src="razor_images/brand-6.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row fut">
+                    <div class="col-4 logo">
+                        <img src="razor_images/logo_1553585953__67107.original.png" alt="">
+                        <ul class="footer-logo-column">
+                            <li class="hotline">
+                                <div class="hotline-box"><i class="fas fa-headset"></i></div><div class="hotline-text"><p>Hotline Free 24/7</p><p>(1800)-000-9876</p></div>
+                            </li>
+                            <li> <div class="address-box"><div class="address">Address : </div> <div class="address-text">Acme widgets 123 widget street, Acmeville, AC 12345 USA</div></div>  </li>
+                            <li> <div class="address-box"><div class="address">E-mail : </div> <div class="address-text">contact@razor.com</div></div>  </li>
+                            <li class="icon"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col footer-column">
+                        <ul>
+                            <li class="heading">Information</li>
+                            <li>Blog</li>
+                            <li>Page</li>
+                            <li>Contact Us</li>
+                            <li>Sitemap</li>
+                            <li>Products</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="col footer-column">
+                        <ul>
+                            <li class="heading">Brands</li>
+                            <li>Common Good</li>
+                            <li>OFS</li>
+                            <li>Segaform</li>
+                            <li>Vulputate velite</li>
+                            <li>Feugiat nella</li>
+                            <li>View All</li>
+                        </ul>
+                    </div>
+                    <div class="col footer-column">
+                        <ul>
+                            <li class="heading">All Categories</li>
+                            <li>Electronic and Digital</li>
+                            <li>Health and Beauty</li>
+                            <li>Top 10 Offers</li>
+                            <li>Home and Kitchens</li>
+                            <li>Smartphones and Tablets</li>
+                            <li>View All</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 news-letter">
+                        <ul class="letter">
+                            <li class="heading">Sign Up for Newsletter</li>
+                            <li>Get the latest updates on new products and upcomming sales</li>
+                            <li><input type="text" id="input-email" placeholder="Your email address"></li>
+                            <li><button class="btn subscribe">SUBSCRIBE</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid lower-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-6 align-center">
+                        <p class="lower-footer-text">&copy; 2021 Razor - Electronics Store Big Commerce Theme Powered by <span class="chetu"><a href="https://www.chetu.com/" target="_blank">Chetu India private limited</a>.</span></p>
+                    </div>
+                    <div class="col-3">
+                        <img src="razor_images/payment.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $('.first-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+$('.sponser-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:5
+        },
+        1000:{
+            items:7
+        }
+    }
+})
+    </script>
+</body>
+
+</html>
